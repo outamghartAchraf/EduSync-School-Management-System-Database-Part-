@@ -83,15 +83,6 @@ Contains:
 
 ---
 
-##   Important Constraint
-
-```sql
-UNIQUE (student_id, course_id)
-```
-
-  Prevents duplicate enrollments
-
----
 
 ## Conclusion
 
