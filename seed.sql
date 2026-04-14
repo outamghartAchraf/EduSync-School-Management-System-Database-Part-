@@ -3,7 +3,6 @@ USE edusync;
 /*--- ROLES ------- */
 INSERT INTO roles (role_name) VALUES ('Admin'), ('Professor'), ('Student');
 
-
 /*---- USERS ------ */
 INSERT INTO users (firstname, lastname, email, password, role_id) VALUES
 ('Admin', 'System', 'admin@gmail.com', 'admin123', 1),
@@ -25,3 +24,8 @@ INSERT INTO students (date_of_birth, student_number, user_id, class_id) VALUES
 ('2000-11-22', 'S02', 5, 1),
 ('2002-03-15', 'S03', 6, 2);
 
+/*---- COURSES ------ */
+INSERT INTO courses (title, description, total_hours, prof_id) VALUES
+('JavaScript', 'learnig javascript', 40, 2),
+('Laravel', 'learning laravel php', 50, 2),
+('react js', 'learning react js', 60, 3);
