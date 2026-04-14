@@ -49,3 +49,18 @@ CREATE TABLE students (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
+
+
+/* -----create table courses -----*/
+CREATE TABLE courses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    description TEXT,
+    total_hours INT NOT NULL,
+    prof_id INT NOT NULL,
+
+    FOREIGN KEY (prof_id)
+        REFERENCES users(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
