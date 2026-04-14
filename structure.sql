@@ -30,3 +30,22 @@ CREATE TABLE classes (
     classroom_number VARCHAR(50) NOT NULL
 );
 
+
+/* -----create table students -----*/
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date_of_birth DATE NOT NULL,
+    student_number VARCHAR(50) NOT NULL UNIQUE,
+    user_id INT NOT NULL UNIQUE,
+    class_id INT NOT NULL,
+
+    FOREIGN KEY (user_id)
+        REFERENCES users(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+
+    FOREIGN KEY (class_id)
+        REFERENCES classes(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
