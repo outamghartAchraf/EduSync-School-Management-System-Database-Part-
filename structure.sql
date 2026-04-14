@@ -66,7 +66,6 @@ CREATE TABLE courses (
 );
 
 /* -----create table enrollments -----*/
-
 CREATE TABLE enrollments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     enrolled_at DATE NOT NULL,
@@ -84,7 +83,6 @@ CREATE TABLE enrollments (
         ON DELETE CASCADE
         ON UPDATE CASCADE,
 
-    -- Prevent duplicate enrollment
     UNIQUE (student_id, course_id)
 );
 
