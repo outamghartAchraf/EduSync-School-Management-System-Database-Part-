@@ -16,7 +16,7 @@ INSERT INTO users (firstname, lastname, email, password, role_id) VALUES
 INSERT INTO classes (name, classroom_number) VALUES
 ('PHP LARAVEL 2026', 'A1'),
 ('MERN Stack 2026', 'B1'),
-('JAVA  2026', 'A1');
+('JAVA  2026', 'A2');
 
 /*---- STUDENTS ------ */
 INSERT INTO students (date_of_birth, student_number, user_id, class_id) VALUES
