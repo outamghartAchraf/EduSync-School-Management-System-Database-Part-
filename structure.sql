@@ -23,5 +23,10 @@ CREATE TABLE users (
         ON UPDATE CASCADE
 );
 
-
+/* -----create table classes -----*/
+CREATE TABLE classes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    classroom_number VARCHAR(50) NOT NULL
+);
 
