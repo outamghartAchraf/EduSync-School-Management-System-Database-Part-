@@ -29,3 +29,11 @@ INSERT INTO courses (title, description, total_hours, prof_id) VALUES
 ('JavaScript', 'learnig javascript', 40, 2),
 ('Laravel', 'learning laravel php', 50, 2),
 ('react js', 'learning react js', 60, 3);
+
+/*---- enrollments ------ */
+INSERT INTO enrollments (enrolled_at, status, course_id, student_id) VALUES
+('2026-04-01', 'active', 1, 1),
+('2026-04-01', 'active', 2, 1),
+('2026-04-02', 'active', 1, 2),
+('2026-04-02', 'completed', 3, 2),
+('2026-04-03', 'active', 3, 3);
