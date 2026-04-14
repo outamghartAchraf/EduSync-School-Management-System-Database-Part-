@@ -64,3 +64,33 @@ CREATE TABLE courses (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 );
+
+/* -----create table enrollments -----*/
+
+CREATE TABLE enrollments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    enrolled_at DATE NOT NULL,
+    status ENUM('active', 'completed') DEFAULT 'active',
+    course_id INT NOT NULL,
+    student_id INT NOT NULL,
+
+    FOREIGN KEY (course_id)
+        REFERENCES courses(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+
+    FOREIGN KEY (student_id)
+        REFERENCES students(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+
+    -- Prevent duplicate enrollment
+    UNIQUE (student_id, course_id)
+);
+
+
+
+
+
+
+
