@@ -62,7 +62,7 @@ The goal is to organize users, students, classes, courses, and enrollments using
 
 ---
 
-## 🔹 N:N (Many-to-Many)
+##  N:N (Many-to-Many)
 
 **students ↔ courses**
 
