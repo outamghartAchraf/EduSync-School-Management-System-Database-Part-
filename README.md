@@ -1,3 +1,4 @@
+
 # EduSync : School Management System (Database Part)
 
 ## Overview
@@ -5,6 +6,8 @@
 This project represents the database design of **EduSync**, a School Management System.
 The goal is to organize users, students, classes, courses, and enrollments using a normalized relational database.
 
+
+<img width="1840" height="674" alt="D1" src="https://github.com/user-attachments/assets/e19728ef-dc4e-4b59-a691-dd2b3650e648" />
 ---
 
 ## Relationships Explanation
